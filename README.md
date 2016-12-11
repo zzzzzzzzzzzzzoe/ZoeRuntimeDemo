@@ -42,4 +42,25 @@ Method method = class_getClassMethod(class, SEL);
 ```
 Method method = class_getInstanceMethod(class, SEL);
 ```
+
+- 添加方法
+```
+BOOL addSucc = class_addMethod(类, SEL,方法的实现, 方法的返回和参数);
+```
+
+- 替换原方法实现
+```
+class_replaceMethod(类, SEL, 方法的实现, 方法的返回和参数);
+```
+
+- 交换两个方法
+```
+method_exchangeImplementations(方法1, 方法2);
+```
+## 具体实现参见demo
+### 推荐学习博客
+[runtime详解](http://www.jianshu.com/p/46dd81402f63)
+[详解Runtime运行时机制](http://www.jianshu.com/p/1e06bfee99d0)
+[让你快速上手Runtime](http://www.jianshu.com/p/e071206103a4)
+
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeRuntimeDemo/blob/master/gifFile/runtime.gif)
