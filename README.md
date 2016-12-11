@@ -15,13 +15,13 @@
 - 方法实现的替换和拦截
 - 归档解档
 - 字典模型转换
+
+
 ### 方法解析
 - 获取属性列表
-<pre><code>
-objc_property_t *propertyList = class_copyPropertyList([self class], &count);
+<pre><code>objc_property_t *propertyList = class_copyPropertyList([self class], &count);
 for (unsigned int i=0; i<count; i++) {
      const char *propertyName = property_getName(propertyList[i]);
      NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
- }
- </code></pre>
+ }</code></pre>
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeRuntimeDemo/blob/master/gifFile/runtime.gif)
