@@ -19,9 +19,9 @@
 
 ### 方法解析
 - 获取属性列表
-<pre><code>objc_property_t *propertyList = class_copyPropertyList([self class], &count);</code></pre>
-<pre><code> for(unsigned int i=0; i<count; i++){</code></pre>
-<pre><code>const char *propertyName = property_getName(propertyList[i]); </code></pre>
-<pre><code>NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);</code></pre>
-<pre><code>}</code></pre>
+ <Method *methodList = class_copyMethodList([self class], &count);
+ for (unsigned int i; i<count; i++) {
+     Method method = methodList[i];
+     NSLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
+ }>
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeRuntimeDemo/blob/master/gifFile/runtime.gif)
