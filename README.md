@@ -17,9 +17,11 @@
 - 字典模型转换
 ### 方法解析
 - 获取属性列表
-objc_property_t *propertyList = class_copyPropertyList([self class], &count);
- for (unsigned int i=0; i<count; i++) {
-     const char *propertyName = property_getName(propertyList[i]);
-     NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
- }
+
+
+>objc_property_t *propertyList = class_copyPropertyList([self class], &count);
+>for (unsigned int i=0; i<count; i++) {
+>     const char *propertyName = property_getName(propertyList[i]);
+>     NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
+> }
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeRuntimeDemo/blob/master/gifFile/runtime.gif)
