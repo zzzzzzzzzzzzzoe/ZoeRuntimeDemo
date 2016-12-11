@@ -22,4 +22,21 @@
 ```
 objc_property_t *propertyList = class_copyPropertyList([self class], &count);
  ```
+ 
+- 获取方法列表
+```
+ Method *methodList = class_copyMethodList([self class], &count);
+
+```
+
+- 获取成员变量列表
+```
+Ivar *ivarList = class_copyIvarList([self class], &count);
+```
+
+- 获得类方法
+```
+Method method = class_getInstanceMethod(class, SEL);
+
+```
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeRuntimeDemo/blob/master/gifFile/runtime.gif)
