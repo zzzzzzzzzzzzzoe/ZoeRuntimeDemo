@@ -20,9 +20,9 @@
 ### 方法解析
 - 获取属性列表
 
- <pre><code> Method *methodList = class_copyMethodList([self class], &count);</code></pre>
- <pre><code>for (unsigned int i; i<count; i++) {</code></pre>
- <pre><code>Method method = methodList[i];</code></pre>
- <pre><code> NSLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
- } </code></pre>
+ `Method *methodList = class_copyMethodList([self class], &count);
+ for (unsigned int i; i<count; i++) {
+ Method method = methodList[i];
+ NSLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
+ } `
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeRuntimeDemo/blob/master/gifFile/runtime.gif)
