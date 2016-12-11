@@ -21,6 +21,8 @@
 - 获取属性列表
 
  `Method *methodList = class_copyMethodList([self class], &count);
+ 
+ 
  for (unsigned int i; i<count; i++) {
  Method method = methodList[i];
  NSLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
