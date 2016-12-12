@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+Category.h"
+#import "Book.h"
+#import "Person.h"
 
-@interface BookShop : NSObject
-
+@interface BookShop : NSObject<arrayObjectClassDelegate>
+@property (nonatomic,copy) NSString * name;
+@property (nonatomic,strong) Person * shopkeeper;
+@property (nonatomic,strong) NSArray * books;
 @end

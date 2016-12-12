@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+@protocol arrayObjectClassDelegate <NSObject>
 
-@interface NSObject_Category : NSObject
+@optional
+// 如模型中有数组，要实现这个协议
++ (NSDictionary *)arrayObjectClassDic;
 
+@end
+
+
+@interface  NSObject(Category)
+@property (nonatomic, copy) NSString * ppap;
++ (instancetype)objectWithDict:(NSDictionary *)dict;
 @end

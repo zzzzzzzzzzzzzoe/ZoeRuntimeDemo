@@ -9,5 +9,8 @@
 #import "BookShop.h"
 
 @implementation BookShop
-
++ (NSDictionary *)arrayObjectClassDic{
+    
+    return @{@"books":@"Book"};
+}
 @end

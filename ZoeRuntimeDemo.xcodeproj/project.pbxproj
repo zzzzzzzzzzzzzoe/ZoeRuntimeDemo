@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04325E3C1DF3A339002F36D9 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 04325E3B1DF3A339002F36D9 /* Book.m */; };
 		04BF9B241DF2B6550064CBCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF9B231DF2B6550064CBCA /* main.m */; };
 		04BF9B271DF2B6550064CBCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF9B261DF2B6550064CBCA /* AppDelegate.m */; };
 		04BF9B2A1DF2B6550064CBCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF9B291DF2B6550064CBCA /* ViewController.m */; };
@@ -16,6 +17,9 @@
 		04BF9B351DF2B6560064CBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF9B331DF2B6560064CBCA /* LaunchScreen.storyboard */; };
 		04BF9B401DF2B6560064CBCA /* ZoeRuntimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF9B3F1DF2B6560064CBCA /* ZoeRuntimeDemoTests.m */; };
 		04BF9B4B1DF2B6560064CBCA /* ZoeRuntimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF9B4A1DF2B6560064CBCA /* ZoeRuntimeDemoUITests.m */; };
+		04FC26351DF5811200CBDBFF /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC26341DF5811200CBDBFF /* NSObject+Category.m */; };
+		04FC26381DF5811200CBDBFF /* BookShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC26371DF5811200CBDBFF /* BookShop.m */; };
+		04FC263B1DF5811200CBDBFF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC263A1DF5811200CBDBFF /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04325E3A1DF3A339002F36D9 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		04325E3B1DF3A339002F36D9 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		04BF9B1F1DF2B6550064CBCA /* ZoeRuntimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoeRuntimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF9B231DF2B6550064CBCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BF9B251DF2B6550064CBCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +59,12 @@
 		04BF9B461DF2B6560064CBCA /* ZoeRuntimeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoeRuntimeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF9B4A1DF2B6560064CBCA /* ZoeRuntimeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoeRuntimeDemoUITests.m; sourceTree = "<group>"; };
 		04BF9B4C1DF2B6560064CBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FC26331DF5811200CBDBFF /* NSObject+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		04FC26341DF5811200CBDBFF /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		04FC26361DF5811200CBDBFF /* BookShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShop.h; sourceTree = "<group>"; };
+		04FC26371DF5811200CBDBFF /* BookShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShop.m; sourceTree = "<group>"; };
+		04FC26391DF5811200CBDBFF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		04FC263A1DF5811200CBDBFF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,8 @@
 		04BF9B211DF2B6550064CBCA /* ZoeRuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04FC26321DF580C800CBDBFF /* category */,
+				04BF9B5A1DF2C2C90064CBCA /* model */,
 				04BF9B251DF2B6550064CBCA /* AppDelegate.h */,
 				04BF9B261DF2B6550064CBCA /* AppDelegate.m */,
 				04BF9B281DF2B6550064CBCA /* ViewController.h */,
@@ -141,6 +155,28 @@
 				04BF9B4C1DF2B6560064CBCA /* Info.plist */,
 			);
 			path = ZoeRuntimeDemoUITests;
+			sourceTree = "<group>";
+		};
+		04BF9B5A1DF2C2C90064CBCA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				04325E3A1DF3A339002F36D9 /* Book.h */,
+				04325E3B1DF3A339002F36D9 /* Book.m */,
+				04FC26361DF5811200CBDBFF /* BookShop.h */,
+				04FC26371DF5811200CBDBFF /* BookShop.m */,
+				04FC26391DF5811200CBDBFF /* Person.h */,
+				04FC263A1DF5811200CBDBFF /* Person.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		04FC26321DF580C800CBDBFF /* category */ = {
+			isa = PBXGroup;
+			children = (
+				04FC26331DF5811200CBDBFF /* NSObject+Category.h */,
+				04FC26341DF5811200CBDBFF /* NSObject+Category.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04325E3C1DF3A339002F36D9 /* Book.m in Sources */,
 				04BF9B2A1DF2B6550064CBCA /* ViewController.m in Sources */,
+				04FC263B1DF5811200CBDBFF /* Person.m in Sources */,
 				04BF9B271DF2B6550064CBCA /* AppDelegate.m in Sources */,
 				04BF9B301DF2B6560064CBCA /* ZoeRuntimeDemo.xcdatamodeld in Sources */,
 				04BF9B241DF2B6550064CBCA /* main.m in Sources */,
+				04FC26351DF5811200CBDBFF /* NSObject+Category.m in Sources */,
+				04FC26381DF5811200CBDBFF /* BookShop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +549,7 @@
 				04BF9B511DF2B6560064CBCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BF9B521DF2B6560064CBCA /* Build configuration list for PBXNativeTarget "ZoeRuntimeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +558,7 @@
 				04BF9B541DF2B6560064CBCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BF9B551DF2B6560064CBCA /* Build configuration list for PBXNativeTarget "ZoeRuntimeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +567,7 @@
 				04BF9B571DF2B6560064CBCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
